@@ -1,6 +1,6 @@
 //https://leetcode.com/problems/verifying-an-alien-dictionary
-//TC : O(n)
-//SC : O(n)
+//TC : O(n*l) -> n- number of words ; l - avg length of words
+//SC : O(1) -> map size is 26 
 class Solution {
     public boolean isAlienSorted(String[] words, String order) {
         Map<Character, Integer> map = new HashMap<>();
